@@ -9,7 +9,7 @@ void triangle(int width);
 int main()
 {
 	int width = getInput();
-	//Create triangle
+	triangle(width);
 	return EXIT_SUCCESS;
 
 }
@@ -21,3 +21,17 @@ int getInput()
     scanf("%d", &width);
     return width;
 }
+
+void triangle(int width)
+{
+    int i;
+    for(int i=0; i<width; i++)
+    {
+        for (int j=0; j<=i; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+
